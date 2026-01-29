@@ -4,6 +4,8 @@ import GithubProvider from "next-auth/providers/github";
 import User from "@/models/User";
 import connectDB from "@/app/db/connectDb";
 
+export const dynamic = 'force-dynamic';
+
 const handler = NextAuth({
   providers: [
     GoogleProvider({
@@ -44,7 +46,7 @@ const handler = NextAuth({
       return true;
     }
   },
-  secret: process.env.AUTH_SECRET,
+  secret: process.env.AUTH_SECRET || process.env.NEXTAUTH_SECRET,
   useSecureCookies: process.env.NODE_ENV === "production",
   cookies: {
     pkceCodeVerifier: {
