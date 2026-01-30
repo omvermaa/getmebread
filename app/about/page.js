@@ -15,14 +15,14 @@ const About = () => {
           GetMeBread is a crowdfunding platform designed for creators, developers, and artists. 
           Stop worrying about payment gateways and start getting supported by your fans directly.
         </p>
-        <div className="mt-10 flex gap-4">
-          <Link href="/dashboard">
+        <div className="mt-10 flex gap-3 md:flex-row flex-col items-center justify-centergap-4">
+          <Link href="/getstarted">
             <button className="px-8 py-4 bg-gradient-to-br from-purple-600 to-blue-500 rounded-full font-bold text-lg hover:opacity-90 transition-all shadow-lg shadow-purple-500/20">
-              Start Receiving Support
+              How to Get Started
             </button>
           </Link>
           <Link href="/dashboard">
-            <button className="px-8 py-4 bg-slate-800 rounded-full font-bold text-lg hover:bg-slate-700 transition-all border border-slate-700">
+            <button className="px-8 py-4 bg-slate-800 rounded-full font-bold text-lg hover:bg-slate-700  transition-all border border-slate-700">
               Log In
             </button>
           </Link>
